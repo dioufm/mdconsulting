@@ -38,8 +38,8 @@ import java.util.Set;
 @RequestMapping("/api/auth")
 public class AuthRestAPIs {
 
-	@Autowired
-	AuthenticationManager authenticationManager;
+//	@Autowired
+//	AuthenticationManager authenticationManager;
 
 	@Autowired
 	UserRepository userRepository;
@@ -55,16 +55,18 @@ public class AuthRestAPIs {
 
 	@PostMapping("/signin")
 	public ResponseEntity<?> authenticateUser(@Valid @RequestBody LoginForm loginRequest) {
+//
+//		Authentication authentication = authenticationManager.authenticate(
+//				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+//
+//		SecurityContextHolder.getContext().setAuthentication(authentication);
+//
+//		String jwt = jwtProvider.generateJwtToken(authentication);
+//		UserDetails userDetails = (UserDetails) authentication.getPrincipal();
 
-		Authentication authentication = authenticationManager.authenticate(
-				new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
-
-		SecurityContextHolder.getContext().setAuthentication(authentication);
-
-		String jwt = jwtProvider.generateJwtToken(authentication);
-		UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-
-		return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getUsername(), userDetails.getAuthorities()));
+//		return ResponseEntity.ok(new JwtResponse(jwt, userDetails.getUsername(), userDetails.getAuthorities()));
+		
+		return ResponseEntity.ok(new JwtResponse(null, null, null));
 	}
 
 
