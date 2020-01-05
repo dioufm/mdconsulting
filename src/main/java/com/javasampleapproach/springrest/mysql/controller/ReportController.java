@@ -54,8 +54,8 @@ public class ReportController {
 
 	Logger logger = LoggerFactory.getLogger(ReportController.class);
 
-	@Autowired
-	AuthenticationManager authenticationManager;
+//	@Autowired
+//	AuthenticationManager authenticationManager;
 
 	@Autowired
 	UserRepository userRepository;
