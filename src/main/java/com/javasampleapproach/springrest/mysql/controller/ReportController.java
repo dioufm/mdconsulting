@@ -63,11 +63,11 @@ public class ReportController {
 	@Autowired
 	RoleRepository roleRepository;
 
-	@Autowired
-	PasswordEncoder encoder;
+//	@Autowired
+//	PasswordEncoder encoder;
 
-	@Autowired
-	JwtProvider jwtProvider;
+//	@Autowired
+//	JwtProvider jwtProvider;
 
 	@PostMapping("/www")
 	public ResponseEntity<?> getReport(@Valid @RequestBody String url) {
