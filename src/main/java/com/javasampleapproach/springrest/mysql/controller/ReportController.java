@@ -45,7 +45,7 @@ import com.javasampleapproach.springrest.mysql.model.rule.RuleMessages;
 import com.javasampleapproach.springrest.mysql.model.rule.TagEnum;
 import com.javasampleapproach.springrest.mysql.repo.RoleRepository;
 import com.javasampleapproach.springrest.mysql.repo.UserRepository;
-import com.javasampleapproach.springrest.mysql.security.jwt.JwtProvider;
+//import com.javasampleapproach.springrest.mysql.security.jwt.JwtProvider;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
