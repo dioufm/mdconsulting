@@ -42,9 +42,6 @@ import com.mdconsulting.response.PageInfo;
 import com.mdconsulting.response.RapportAnalyse;
 import com.mdconsulting.response.TagAnalyse;
 
-
-
-
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
 @RequestMapping("/report")
