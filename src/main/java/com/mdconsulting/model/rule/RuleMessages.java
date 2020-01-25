@@ -1,4 +1,4 @@
-package com.javasampleapproach.springrest.mysql.model.rule;
+package com.mdconsulting.model.rule;
 
 public class RuleMessages {
 

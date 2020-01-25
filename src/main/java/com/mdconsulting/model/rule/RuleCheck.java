@@ -1,12 +1,12 @@
-package com.javasampleapproach.springrest.mysql.model.rule;
+package com.mdconsulting.model.rule;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import com.javasampleapproach.springrest.mysql.message.response.PageInfo;
-import com.javasampleapproach.springrest.mysql.message.response.TagAnalyse;
-import com.javasampleapproach.springrest.mysql.model.Word;
+import com.mdconsulting.model.Word;
+import com.mdconsulting.response.PageInfo;
+import com.mdconsulting.response.TagAnalyse;
 
 public class RuleCheck {
 

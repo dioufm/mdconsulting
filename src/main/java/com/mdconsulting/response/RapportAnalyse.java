@@ -1,4 +1,4 @@
-package com.javasampleapproach.springrest.mysql.message.response;
+package com.mdconsulting.response;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -6,8 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import com.javasampleapproach.springrest.mysql.model.Word;
-import com.javasampleapproach.springrest.mysql.model.rule.RuleMessages;
+import com.mdconsulting.model.Word;
+import com.mdconsulting.model.rule.RuleMessages;
 
 public class RapportAnalyse {
 

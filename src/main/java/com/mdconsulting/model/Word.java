@@ -1,4 +1,4 @@
-package com.javasampleapproach.springrest.mysql.model;
+package com.mdconsulting.model;
 
 public class Word implements  Comparable<Word>{
 

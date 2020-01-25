@@ -1,4 +1,5 @@
-package com.javasampleapproach.springrest.mysql.controller;
+package com.mdconsulting.controller;
+
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -23,11 +24,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,17 +33,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.javasampleapproach.springrest.mysql.message.response.MessageSeo;
-import com.javasampleapproach.springrest.mysql.message.response.PageInfo;
-import com.javasampleapproach.springrest.mysql.message.response.RapportAnalyse;
-import com.javasampleapproach.springrest.mysql.message.response.TagAnalyse;
-import com.javasampleapproach.springrest.mysql.model.Word;
-import com.javasampleapproach.springrest.mysql.model.rule.RuleCheck;
-import com.javasampleapproach.springrest.mysql.model.rule.RuleMessages;
-import com.javasampleapproach.springrest.mysql.model.rule.TagEnum;
-import com.javasampleapproach.springrest.mysql.repo.RoleRepository;
-import com.javasampleapproach.springrest.mysql.repo.UserRepository;
-//import com.javasampleapproach.springrest.mysql.security.jwt.JwtProvider;
+import com.mdconsulting.model.Word;
+import com.mdconsulting.model.rule.RuleCheck;
+import com.mdconsulting.model.rule.RuleMessages;
+import com.mdconsulting.model.rule.TagEnum;
+import com.mdconsulting.response.MessageSeo;
+import com.mdconsulting.response.PageInfo;
+import com.mdconsulting.response.RapportAnalyse;
+import com.mdconsulting.response.TagAnalyse;
+
+
+
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -54,20 +52,6 @@ public class ReportController {
 
 	Logger logger = LoggerFactory.getLogger(ReportController.class);
 
-//	@Autowired
-//	AuthenticationManager authenticationManager;
-
-	@Autowired
-	UserRepository userRepository;
-
-	@Autowired
-	RoleRepository roleRepository;
-
-//	@Autowired
-//	PasswordEncoder encoder;
-
-//	@Autowired
-//	JwtProvider jwtProvider;
 
 	@PostMapping("/www")
 	public ResponseEntity<?> getReport(@Valid @RequestBody String url) {

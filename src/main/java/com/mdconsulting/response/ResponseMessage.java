@@ -1,4 +1,4 @@
-package com.javasampleapproach.springrest.mysql.message.response;
+package com.mdconsulting.response;
 
 public class ResponseMessage {
 	private String message;
